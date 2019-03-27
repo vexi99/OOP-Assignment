@@ -21,6 +21,7 @@ public class Assignment extends PApplet {
     private void draw() {
         background(0);
         drawGrid(); 
+        //to be continued at a later date once i figure out what i want to model my code from
     }
     
     
