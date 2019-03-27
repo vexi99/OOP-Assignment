@@ -22,6 +22,8 @@ public class Assignment extends PApplet {
         background(0);
         drawGrid(); 
         //to be continued at a later date once i figure out what i want to model my code from
+        //asdf
+        //lemao
     }
     
     
