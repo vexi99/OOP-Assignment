@@ -45,7 +45,10 @@ public class Assignment extends PApplet {
     //henlo
 
 
-    
+    private void whatsTheStory(){
+        //empty af
+    }
+
     private void draw() {
         background(0);
         drawGrid(); 
