@@ -4,9 +4,9 @@ import processing.core.PApplet;
 
 public class MovingCircle
 {
-    private float x;
+    public float x;
     private float dx = 1;
-    private float y;
+    public float y;
     private float diameter;
     private float radius;
     UI ui;
@@ -39,5 +39,6 @@ public class MovingCircle
         {
             dx *= -1;
         }
+
     }
 }
