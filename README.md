@@ -1,10 +1,8 @@
 # SciFi UI Project
 
-Name:
+Name: David Tilson
 
-Student Number: 
-
-Fork this repository and use it a starter project for your assignment
+Student Number: C17448206
 
 # Description of the assignment
 
