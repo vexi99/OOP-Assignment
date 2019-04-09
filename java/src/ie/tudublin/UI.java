@@ -56,6 +56,11 @@ public class UI extends PApplet
         {
             System.out.println("Left arrow key pressed");
         }
+
+        if (checkKey(RIGHT))
+        {
+            System.out.println("Right arrow key pressed");
+        }
     }
 }
 
