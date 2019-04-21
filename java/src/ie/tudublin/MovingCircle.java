@@ -18,7 +18,7 @@ public class MovingCircle
         this.y = y;
         this.diameter = diameter;
         radius = diameter / 2;
-        //asdf
+        //asdfasdf
     }
     
     public void render()
