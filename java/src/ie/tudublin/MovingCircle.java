@@ -20,7 +20,7 @@ public class MovingCircle
         radius = diameter / 2;
         //asdfasdf
         //helloasdfasdfaaa
-        //henlo
+        //henloa
     }
     
     public void render()
