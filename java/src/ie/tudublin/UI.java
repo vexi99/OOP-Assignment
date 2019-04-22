@@ -4,28 +4,8 @@ import processing.core.PApplet;
 
 public class UI extends PApplet
 {
-    Button b;
-    MovingCircle mc;
-    MovingCircle asdf;
-
-    boolean[] keys = new boolean[1024];
-
-    public void keyPressed()
-    {
-        keys[keyCode] = true;
-    }
     
-    public void keyReleased()
-    {
-        keys[keyCode] = false;
-    }
-
-    public boolean checkKey(int c)
-    {
-        return keys[c] || keys [Character.toUpperCase(c)];
-    }
     
-
     public void settings()
     {
         size(800, 800);
@@ -35,13 +15,9 @@ public class UI extends PApplet
 
     public void setup()
     {
-        b = new Button(this, 50, 50, 100, 50, "I am a button");
-        mc = new MovingCircle(this, width / 2, height * .75f, 50);
-        asdf = new MovingCircle(this, width / 2, height * .75f, 50);
-        radar = new Radar(this, 1, width / 2, height / 2, 100);
+       
     }
 
-    Radar radar;
 
     public void draw()
     {
