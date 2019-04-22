@@ -22,17 +22,7 @@ public class UI extends PApplet
     public void draw()
     {
         background(0);
-        b.render();
-
-        mc.update();
-        mc.render();
-
-        asdf.update();
-        asdf.render();
-
-        radar.update();
-        radar.render();
-
+        
         if (checkKey(LEFT))
         {
             System.out.println("Left arrow key pressed");
