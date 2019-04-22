@@ -5,4 +5,6 @@ import processing.core.PApplet;
 public class StarBackground extends PApplet
 {
     //todo
+
+    background(0);
 }
