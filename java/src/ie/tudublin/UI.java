@@ -23,34 +23,9 @@ public class UI extends PApplet
     {
         background(0);
         
-        if (checkKey(LEFT))
-        {
-            System.out.println("Left arrow key pressed");
+        
 
-            asdf.x--;
-        }
-
-        if (checkKey(RIGHT))
-        {
-            System.out.println("Right arrow key pressed");
-
-            asdf.x++;
-        }
-
-        if (checkKey(UP))
-        {
-            System.out.println("Up arrow key pressed");
-
-            asdf.y--;
-
-        }
-
-        if (checkKey(DOWN))
-        {
-            System.out.println("Down arrow key pressed");
-
-            asdf.y++;
-        }
+       
     }
 }
 
