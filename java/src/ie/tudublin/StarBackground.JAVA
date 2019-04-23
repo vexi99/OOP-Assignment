@@ -4,7 +4,16 @@ import processing.core.PApplet;
 
 public class StarBackground extends PApplet
 {
-    //todo
+    UI ui;
+    
+    public StarBackground(UI ui)
+    {
+        this.ui = ui;
+    }
 
-    background(0);
+    public void render()
+    {
+        //creating background for map
+        ui.background(0);
+    }
 }

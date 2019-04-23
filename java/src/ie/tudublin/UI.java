@@ -4,7 +4,7 @@ import processing.core.PApplet;
 
 public class UI extends PApplet
 {
-    
+    StarBackground sb;
     
     public void settings()
     {
@@ -13,14 +13,16 @@ public class UI extends PApplet
 
     public void setup()
     {
-       
+        
+        sb = new StarBackground(this);
     }
 
 
     public void draw()
     {
-        background(0);
-       
+        //background(0);
+        sb.render();
+        
     }
 }
 
