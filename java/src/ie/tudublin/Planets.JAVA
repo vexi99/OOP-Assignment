@@ -29,6 +29,16 @@ public class Planets extends PApplet
             ui.circle(400,400,i);
         }
         
+        //start drawing the planets
+
+
+
+        ui.noStroke();
+        ui.fill(255);
+        for (int i=100;i<780;i=i+110)
+        {
+            ui.circle(400,(400-i),20);
+        }
 
     }
 
