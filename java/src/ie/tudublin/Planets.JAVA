@@ -22,6 +22,7 @@ public class Planets extends PApplet
         //start by drawing the circles which show planets orbit around the sun
         ui.noFill();
         ui.stroke(255);
+        
         //Loop for drawing of all orbits 
         for (int i=100; i<780;i=i+110)
         {
