@@ -22,7 +22,6 @@ public class StarBackground extends PApplet
         ui.background(0);
         
         //creating stars to populate background
-
         for (int i = 0; i < 800; i=i + 30)
         {
             for (int j = 1; j < 800; j=j+70)
