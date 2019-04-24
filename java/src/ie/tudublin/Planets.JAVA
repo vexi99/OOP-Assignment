@@ -19,7 +19,7 @@ public class Planets extends PApplet
 
     public void render()
     {
-        //start by drawing the circles which show planets orbit around the sun
+        //start by drawing the circles which show planets orbit around the sun.
         ui.noFill();
         ui.stroke(255);
         
