@@ -13,8 +13,7 @@ public class UI extends PApplet
 
     public void setup()
     {
-        
-        sb = new StarBackground(this);
+        sb = new StarBackground(this, 800, 800);
     }
 
 
