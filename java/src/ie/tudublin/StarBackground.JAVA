@@ -1,7 +1,6 @@
 package ie.tudublin;
 
 import processing.core.PApplet;
-import java.util.Random;
 
 public class StarBackground extends PApplet
 {
