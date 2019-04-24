@@ -24,7 +24,7 @@ public class Planets extends PApplet
         ui.stroke(255);
         
         //Loop for drawing of all orbits 
-        for (int i=100; i<780;i=i+110)
+        for (int i=110; i<780;i=i+110)
         {
             ui.circle(400,400,i);
         }
@@ -34,10 +34,14 @@ public class Planets extends PApplet
 
 
         ui.noStroke();
-        ui.fill(255);
-        for (int i=100;i<780;i=i+110)
+        ui.fill(165, 126, 87);
+        
+        for (int i=55;i<400;i=i+55)
         {
-            ui.circle(400,(400-i),20);
+            ui.circle(400,(400+i),20);
+            /*This loop works by incrementing the Y co-ord by 55, which is 
+            / the radius of the circle used to draw the orbit lines.
+            */
         }
 
     }
