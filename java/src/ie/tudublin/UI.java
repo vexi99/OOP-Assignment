@@ -18,12 +18,11 @@ public class UI extends PApplet
 
     public void setup()
     {
-        readFile();
-        printFile();
+        
         //passing variables to classes
         sb = new StarBackground(this, 800, 800);
         sun = new Sun(this, 800, 800);
-        //planets = new Planets(this,row);
+        planets = new Planets(this);
         //read from csv file
         
     }
@@ -32,15 +31,15 @@ public class UI extends PApplet
     {
         sb.render();
         sun.render();
-        //planets.render();
+        planets.render();
     }
 
-    public void readFile()
+    /*public void readFile()
     {
         Table table = loadTable("PlanetData.csv", "header");
 
-        for (TableRow row : table.rows()) {
-            Planets planets = new Planets(this,row);
+        for (TableRow tr : table.rows()) {
+            Planets planets = new Planets(tr);
             planetList.add(planets);
         }
     }
@@ -53,6 +52,7 @@ public class UI extends PApplet
         }
     }
 
-    private ArrayList<Planets> planetList = new ArrayList<Planets>();
+    ArrayList<Planets> planetList = new ArrayList<Planets>();
+    */
 }
 

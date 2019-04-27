@@ -16,16 +16,17 @@ public class Planets extends PApplet
     private float planetMass;
     private int i = 0;
 
-    public Planets(UI ui, TableRow row)
+    public Planets(UI ui)
     {
         //passing variables from UI.java
         this.ui = ui;
+        /*
         name = row.getString("Name");
         habital = row.getString("Habital Zone");
         orbitPeriod = row.getFloat("Orbital Period");
         starDist = row.getFloat("Distance from Star");
         planetRadius = row.getFloat("Planet radius");
-        planetMass = row.getFloat("Planet Mass");
+        planetMass = row.getFloat("Planet Mass");*/
     }
 
     public void render()
@@ -41,9 +42,6 @@ public class Planets extends PApplet
         }
         
         //start drawing the planets
-
-
-
         ui.noStroke();
         ui.fill(165, 126, 87);
         
