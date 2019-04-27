@@ -5,7 +5,6 @@ import processing.data.Table;
 import processing.data.TableRow;
 import java.util.ArrayList;
 
-
 public class UI extends PApplet
 {
     StarBackground sb;
