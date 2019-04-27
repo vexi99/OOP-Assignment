@@ -116,5 +116,4 @@ public class Planets extends PApplet
     {
         this.planetMass = planetMass;
     }
-    
 }
