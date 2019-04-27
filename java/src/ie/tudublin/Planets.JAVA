@@ -18,7 +18,7 @@ public class Planets extends PApplet
 
     public Planets(UI ui)
     {
-        
+    
         //passing variables from UI.java
         this.ui = ui;
         /*
