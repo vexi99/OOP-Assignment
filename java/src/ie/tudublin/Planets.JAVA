@@ -59,6 +59,13 @@ public class Planets extends PApplet
     public void update()
     {
         theta += PApplet.TWO_PI * time / speed;
+        /*controlling statement to limit speed of planets rotation, without this the planets speed
+        / infinitely increases causing bugs
+        */
+        if (speed > 15)
+        {
+            speed -= 0.2;
+        }
     }
 
     //Setter/Getter functions
