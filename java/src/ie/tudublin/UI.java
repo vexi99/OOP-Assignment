@@ -78,12 +78,26 @@ public class UI extends PApplet
 
         if (checkKey(LEFT))
         {
-            System.out.println("Left arrow key pressed");
+            System.out.println("Slowing down planets..");
+            planets1.speed+= 0.1;
+            planets2.speed+= 0.1;
+            planets3.speed+= 0.1;
+            planets4.speed+= 0.1;
+            planets5.speed+= 0.1;
+            planets6.speed+= 0.1;
+            planets7.speed+= 0.1;   
         }
 
         if (checkKey(RIGHT))
         {
-            System.out.println("Right arrow key pressed");
+            System.out.println("Quickening up planets..");
+            planets1.speed-=0.1;
+            planets2.speed-=0.1;
+            planets3.speed-=0.1;
+            planets4.speed-=0.1;
+            planets5.speed-=0.1;
+            planets6.speed-=0.1;
+            planets7.speed-=0.1;
         }
     }
 

@@ -18,7 +18,7 @@ public class Planets extends PApplet
     private int i = 0;
     private float radius;
     private PVector pos;
-    private float speed;
+    public float speed;
     private float theta = 0;
     public float time = 1.0f / 60.0f;
     private int r;
@@ -58,7 +58,6 @@ public class Planets extends PApplet
 
     public void update()
     {
-        //pos.x++;
         theta += PApplet.TWO_PI * time / speed;
     }
 
