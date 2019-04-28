@@ -18,6 +18,23 @@ public class UI extends PApplet
     Planets planets6;
     Planets planets7;
 
+    boolean[] keys = new boolean[1024];
+
+    public void keyPressed()
+    {
+        keys[keyCode] = true;
+    }
+    
+    public void keyReleased()
+    {
+        keys[keyCode] = false;
+    }
+
+    public boolean checkKey(int c)
+    {
+        return keys[c] || keys [Character.toUpperCase(c)];
+    }
+
     public void settings()
     {
         size(800, 800);
@@ -58,6 +75,16 @@ public class UI extends PApplet
         planets6.update();
         planets7.render();
         planets7.update();
+
+        if (checkKey(LEFT))
+        {
+            System.out.println("Left arrow key pressed");
+        }
+
+        if (checkKey(RIGHT))
+        {
+            System.out.println("Right arrow key pressed");
+        }
     }
 
     /*public void readFile()
