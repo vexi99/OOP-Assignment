@@ -23,7 +23,7 @@ public class UI extends PApplet
         //passing variables to classes
         sb = new StarBackground(this, 800, 800);
         sun = new Sun(this, 800, 800);
-        planets = new Planets(this, 1, 400, 400, 100);
+        planets = new Planets(this, 1, 400, 400, 55);
         //read from csv file
         
     }
@@ -33,6 +33,7 @@ public class UI extends PApplet
         sb.render();
         sun.render();
         planets.render();
+        planets.update();
     }
 
     /*public void readFile()

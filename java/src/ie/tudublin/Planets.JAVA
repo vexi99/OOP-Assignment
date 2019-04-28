@@ -20,12 +20,16 @@ public class Planets extends PApplet
     private PVector pos;
     private float frequency;
     private float theta = 0;
+    public float timeDelta = 1.0f / 60.0f;
     
     public Planets(UI ui, float frequency, float x, float y, float radius)
     {
     
         //passing variables from UI.java
         this.ui = ui;
+        this.frequency = frequency;
+        pos = new PVector(x, y);
+        this.radius = radius;
         /*
         name = row.getString("Name");
         habital = row.getString("Habital Zone");
@@ -41,6 +45,7 @@ public class Planets extends PApplet
         ui.noFill();
         ui.stroke(255);
         
+        
         //Loop for drawing of all orbits 
         for (int i=110; i<780;i=i+110)
         {
@@ -51,14 +56,26 @@ public class Planets extends PApplet
         ui.noStroke();
         ui.fill(165, 126, 87);
         
-        for (int i=55;i<400;i=i+55)
-        {
-            ui.circle(400,(400+i),20);
+        
+        
+            float x2 = pos.x + (float) Math.sin(theta) * radius;
+            float y2 = pos.y - (float) Math.cos(theta) * radius;
+
+            ui.circle(x2, y2, 20);
+            x2 = pos.x + (float) Math.sin(theta) * radius;
+            y2 = pos.y - (float) Math.cos(theta) * radius + 200;
+            ui.circle(x2,(y2 + 55),20);
             /*This loop works by incrementing the Y co-ord by 55, which is 
             / the radius of the circle used to draw the orbit lines.
             */
-        }
+        
 
+    }
+
+    public void update()
+    {
+        //pos.x++;
+        theta += PApplet.TWO_PI * timeDelta * 0.5;
     }
 
     //Setter/Getter functions
