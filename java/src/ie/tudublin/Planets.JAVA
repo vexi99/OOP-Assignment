@@ -21,8 +21,11 @@ public class Planets extends PApplet
     private float frequency;
     private float theta = 0;
     public float timeDelta = 1.0f / 60.0f;
+    private int r;
+    private int g;
+    private int b;
     
-    public Planets(UI ui, float frequency, float x, float y, float radius)
+    public Planets(UI ui, float frequency, float x, float y, float radius, int r, int g, int b)
     {
     
         //passing variables from UI.java
@@ -30,6 +33,9 @@ public class Planets extends PApplet
         this.frequency = frequency;
         pos = new PVector(x, y);
         this.radius = radius;
+        this.r = r;
+        this.g = g;
+        this.b = b;
         /*
         name = row.getString("Name");
         habital = row.getString("Habital Zone");
@@ -43,7 +49,7 @@ public class Planets extends PApplet
     {
         //start drawing the planets
         ui.noStroke();
-        ui.fill(165, 126, 87);
+        ui.fill(r, g, b);
         
         float x2 = pos.x + (float) Math.sin(theta) * radius;
         float y2 = pos.y - (float) Math.cos(theta) * radius;

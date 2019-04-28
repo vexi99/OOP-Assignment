@@ -10,7 +10,7 @@ public class UI extends PApplet
 {
     StarBackground sb;
     Sun sun;
-    Planets planets;
+    Planets planets1;
     Planets planets2;
     Planets planets3;
     Planets planets4;
@@ -29,13 +29,13 @@ public class UI extends PApplet
         //passing variables to classes
         sb = new StarBackground(this, 800, 800);
         sun = new Sun(this, 800, 800);
-        planets = new Planets(this, 4, 400, 400, 55);
-        planets2 = new Planets(this, 5, 400, 400, 110);
-        planets3 = new Planets(this, 6, 400, 400, 165);
-        planets4 = new Planets(this, 7, 400, 400, 220);
-        planets5 = new Planets(this, 8, 400, 400, 275);
-        planets6 = new Planets(this, 9, 400, 400, 330);
-        planets7 = new Planets(this, 10, 400, 400, 385);
+        planets1 = new Planets(this, 4, 400, 400, 55, 244, 151, 12);
+        planets2 = new Planets(this, 5, 400, 400, 110, 216, 158, 71);
+        planets3 = new Planets(this, 6, 400, 400, 165, 183, 145, 82);
+        planets4 = new Planets(this, 7, 400, 400, 220, 219, 188, 142);
+        planets5 = new Planets(this, 8, 400, 400, 275, 174, 193, 139);
+        planets6 = new Planets(this, 9, 400, 400, 330, 147, 160, 122);
+        planets7 = new Planets(this, 10, 400, 400, 385, 213, 219, 201);
         //read from csv file
         
     }
@@ -44,8 +44,8 @@ public class UI extends PApplet
     {
         sb.render();
         sun.render();
-        planets.render();
-        planets.update();
+        planets1.render();
+        planets1.update();
         planets2.render();
         planets2.update();
         planets3.render();
