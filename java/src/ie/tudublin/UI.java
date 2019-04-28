@@ -87,6 +87,7 @@ public class UI extends PApplet
             planets6.speed+= 0.1;
             planets7.speed+= 0.1;   
         }
+        
 
         if (checkKey(RIGHT))
         {
