@@ -32,6 +32,17 @@ public class StarBackground extends PApplet
                 ui.point(i, j);
             }
         }
+
+        //start by drawing the circles which show the planets orbit around the sun.
+        ui.noFill();
+        ui.stroke(255);
+        
+        
+        //Loop for drawing of all orbits increments by 110 which is the diameter of the circles.
+        for (int i=110; i<780;i=i+110)
+        {
+            ui.circle(400,400,i);
+        }
         
     }
 }

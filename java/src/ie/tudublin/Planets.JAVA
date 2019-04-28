@@ -41,41 +41,19 @@ public class Planets extends PApplet
 
     public void render()
     {
-        //start by drawing the circles which show planets orbit around the sun.
-        ui.noFill();
-        ui.stroke(255);
-        
-        
-        //Loop for drawing of all orbits 
-        for (int i=110; i<780;i=i+110)
-        {
-            ui.circle(400,400,i);
-        }
-        
         //start drawing the planets
         ui.noStroke();
         ui.fill(165, 126, 87);
         
-        
-        
-            float x2 = pos.x + (float) Math.sin(theta) * radius;
-            float y2 = pos.y - (float) Math.cos(theta) * radius;
-            ui.circle(x2, y2, 20);
-        /*
-            x2 = pos.x + (float) Math.sin(theta) * radius;
-            y2 = pos.y - (float) Math.cos(theta) * radius;
-            ui.circle(x2,(y2 + 55),20);
-            /*This loop works by incrementing the Y co-ord by 55, which is 
-            / the radius of the circle used to draw the orbit lines.
-            */
-        
-
+        float x2 = pos.x + (float) Math.sin(theta) * radius;
+        float y2 = pos.y - (float) Math.cos(theta) * radius;
+        ui.circle(x2, y2, 20);
     }
 
     public void update()
     {
         //pos.x++;
-        theta += PApplet.TWO_PI * timeDelta * 0.5;
+        theta += PApplet.TWO_PI * timeDelta / frequency;
     }
 
     //Setter/Getter functions
