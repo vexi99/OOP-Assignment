@@ -11,6 +11,7 @@ public class UI extends PApplet
     StarBackground sb;
     Sun sun;
     Planets planets;
+    Planets2 planets2;
 
     public void settings()
     {
@@ -24,6 +25,7 @@ public class UI extends PApplet
         sb = new StarBackground(this, 800, 800);
         sun = new Sun(this, 800, 800);
         planets = new Planets(this, 1, 400, 400, 55);
+        planets2 = new Planets2(this, 1, 400, 400, 110);
         //read from csv file
         
     }
@@ -34,6 +36,8 @@ public class UI extends PApplet
         sun.render();
         planets.render();
         planets.update();
+        planets2.render();
+        planets2.update();
     }
 
     /*public void readFile()

@@ -6,7 +6,7 @@ import processing.data.TableRow;
 import java.util.ArrayList;
 import processing.core.PVector;
 
-public class Planets extends PApplet
+public class Planets2 extends PApplet
 {
     UI ui;
     private String name;
@@ -22,7 +22,7 @@ public class Planets extends PApplet
     private float theta = 0;
     public float timeDelta = 1.0f / 60.0f;
     
-    public Planets(UI ui, float frequency, float x, float y, float radius)
+    public Planets2(UI ui, float frequency, float x, float y, float radius)
     {
     
         //passing variables from UI.java
@@ -56,19 +56,9 @@ public class Planets extends PApplet
         ui.noStroke();
         ui.fill(165, 126, 87);
         
-        
-        
-            float x2 = pos.x + (float) Math.sin(theta) * radius;
-            float y2 = pos.y - (float) Math.cos(theta) * radius;
-            ui.circle(x2, y2, 20);
-        /*
-            x2 = pos.x + (float) Math.sin(theta) * radius;
-            y2 = pos.y - (float) Math.cos(theta) * radius;
-            ui.circle(x2,(y2 + 55),20);
-            /*This loop works by incrementing the Y co-ord by 55, which is 
-            / the radius of the circle used to draw the orbit lines.
-            */
-        
+        float x2 = pos.x + (float) Math.sin(theta) * radius;
+        float y2 = pos.y - (float) Math.cos(theta) * radius;
+        ui.circle(x2, y2, 20);
 
     }
 
