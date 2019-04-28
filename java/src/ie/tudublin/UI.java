@@ -87,7 +87,6 @@ public class UI extends PApplet
             planets6.speed+= 0.1;
             planets7.speed+= 0.1;   
         }
-        
 
         if (checkKey(RIGHT))
         {
@@ -99,6 +98,18 @@ public class UI extends PApplet
             planets5.speed-=0.1;
             planets6.speed-=0.1;
             planets7.speed-=0.1;
+        }
+
+        if (checkKey(' '))
+        {
+            System.out.println("Setting planets to normal speed");
+            planets1.speed=4;
+            planets2.speed=5;
+            planets3.speed=6;
+            planets4.speed=7;
+            planets5.speed=8;
+            planets6.speed=9;
+            planets7.speed=10;
         }
     }
 
