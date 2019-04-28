@@ -4,6 +4,7 @@ import processing.core.PApplet;
 import processing.data.Table;
 import processing.data.TableRow;
 import java.util.ArrayList;
+import processing.core.PVector;
 
 public class Planets extends PApplet
 {
@@ -15,8 +16,12 @@ public class Planets extends PApplet
     private float planetRadius;
     private float planetMass;
     private int i = 0;
+    private float radius;
+    private PVector pos;
+    private float frequency;
+    private float theta = 0;
 
-    public Planets(UI ui)
+    public Planets(UI ui, float frequency, float x, float y, float radius)
     {
     
         //passing variables from UI.java
