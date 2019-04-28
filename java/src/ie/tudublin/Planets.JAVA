@@ -18,19 +18,19 @@ public class Planets extends PApplet
     private int i = 0;
     private float radius;
     private PVector pos;
-    private float frequency;
+    private float speed;
     private float theta = 0;
-    public float timeDelta = 1.0f / 60.0f;
+    public float time = 1.0f / 60.0f;
     private int r;
     private int g;
     private int b;
     
-    public Planets(UI ui, float frequency, float x, float y, float radius, int r, int g, int b)
+    public Planets(UI ui, float speed, float x, float y, float radius, int r, int g, int b)
     {
     
         //passing variables from UI.java
         this.ui = ui;
-        this.frequency = frequency;
+        this.speed = speed;
         pos = new PVector(x, y);
         this.radius = radius;
         this.r = r;
@@ -59,7 +59,7 @@ public class Planets extends PApplet
     public void update()
     {
         //pos.x++;
-        theta += PApplet.TWO_PI * timeDelta / frequency;
+        theta += PApplet.TWO_PI * time / speed;
     }
 
     //Setter/Getter functions
