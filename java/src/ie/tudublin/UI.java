@@ -60,19 +60,27 @@ public class UI extends PApplet
     public void draw()
     {
         sb.render();
+
         sun.render();
+
         planets1.render();
         planets1.update();
+
         planets2.render();
         planets2.update();
+
         planets3.render();
         planets3.update();
+
         planets4.render();
         planets4.update();
+
         planets5.render();
         planets5.update();
+
         planets6.render();
         planets6.update();
+        
         planets7.render();
         planets7.update();
 
