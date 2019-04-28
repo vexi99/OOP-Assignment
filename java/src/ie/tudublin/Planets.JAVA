@@ -20,6 +20,7 @@ public class Planets extends PApplet
     private PVector pos;
     private float frequency;
     private float theta = 0;
+    
 
     public Planets(UI ui, float frequency, float x, float y, float radius)
     {
