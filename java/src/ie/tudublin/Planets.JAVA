@@ -42,7 +42,8 @@ public class Planets extends PApplet
         orbitPeriod = row.getFloat("Orbital Period");
         starDist = row.getFloat("Distance from Star");
         planetRadius = row.getFloat("Planet radius");
-        planetMass = row.getFloat("Planet Mass");*/
+        planetMass = row.getFloat("Planet Mass");
+        */
     }
 
     public void render()

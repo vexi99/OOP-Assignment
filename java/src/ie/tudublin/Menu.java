@@ -8,5 +8,14 @@ import processing.core.PVector;
 
 public class Menu extends PApplet
 {
-    
+    UI ui;
+    public Menu(UI ui)
+    {
+        this.ui = ui;
+    }
+
+    public void render()
+    {
+        ui.background(225);
+    }
 }

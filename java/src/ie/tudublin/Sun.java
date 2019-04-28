@@ -24,7 +24,7 @@ public class Sun extends PApplet
         //start of drawing of sun
         ui.fill(255, 0, 16);
         ui.noStroke();
-        ui.circle(400,400,50);
+        ui.circle(scWidth/2, scHeight/2, 50);
     }
 }
 

@@ -28,7 +28,9 @@ public class StarBackground extends PApplet
         {
             for (int j = 40; j < screenHeight; j=j+70)
             {
+                //star Colour
                 ui.stroke(241, 244, 66);
+                //Star locations drawn using a for loop
                 ui.point(i, j);
             }
         }

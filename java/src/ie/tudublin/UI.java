@@ -10,6 +10,7 @@ public class UI extends PApplet
 {
     StarBackground sb;
     Sun sun;
+    Menu menu;
     Planets planets1;
     Planets planets2;
     Planets planets3;
@@ -47,7 +48,9 @@ public class UI extends PApplet
         sb = new StarBackground(this, 800, 800);
 
         sun = new Sun(this, 800, 800);
-        
+
+        menu = new Menu(this);
+
         planets1 = new Planets(this, 4, 400, 400, 55, 244, 151, 12);
         planets2 = new Planets(this, 5, 400, 400, 110, 216, 158, 71);
         planets3 = new Planets(this, 6, 400, 400, 165, 183, 145, 82);
@@ -55,8 +58,6 @@ public class UI extends PApplet
         planets5 = new Planets(this, 8, 400, 400, 275, 174, 193, 139);
         planets6 = new Planets(this, 9, 400, 400, 330, 147, 160, 122);
         planets7 = new Planets(this, 10, 400, 400, 385, 213, 219, 201);
-        //read from csv file
-        
     }
 
     public void draw()
@@ -120,6 +121,11 @@ public class UI extends PApplet
             planets5.speed=8;
             planets6.speed=9;
             planets7.speed=10;
+        }
+
+        if (checkKey(ENTER))
+        {
+            menu.render();
         }
     }
 
