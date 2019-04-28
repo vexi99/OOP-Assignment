@@ -90,7 +90,7 @@ public class UI extends PApplet
 
         if (checkKey(RIGHT))
         {
-            System.out.println("Quickening up planets..");
+            System.out.println("Speeding up planets..");
             planets1.speed-=0.1;
             planets2.speed-=0.1;
             planets3.speed-=0.1;
