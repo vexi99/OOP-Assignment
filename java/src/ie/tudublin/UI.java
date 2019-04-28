@@ -45,7 +45,9 @@ public class UI extends PApplet
         
         //passing variables to classes
         sb = new StarBackground(this, 800, 800);
+
         sun = new Sun(this, 800, 800);
+        
         planets1 = new Planets(this, 4, 400, 400, 55, 244, 151, 12);
         planets2 = new Planets(this, 5, 400, 400, 110, 216, 158, 71);
         planets3 = new Planets(this, 6, 400, 400, 165, 183, 145, 82);
@@ -80,7 +82,7 @@ public class UI extends PApplet
 
         planets6.render();
         planets6.update();
-        
+
         planets7.render();
         planets7.update();
 
