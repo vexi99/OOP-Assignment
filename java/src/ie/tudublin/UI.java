@@ -43,6 +43,8 @@ public class UI extends PApplet
 
     public void setup()
     {
+        //read from a csv file
+        readFile();
         
         //passing variables to classes
         sb = new StarBackground(this, 800, 800);
@@ -86,7 +88,7 @@ public class UI extends PApplet
 
         planets7.render();
         planets7.update();
-
+        
         if (checkKey(LEFT))
         {
             System.out.println("Slowing down planets..");
@@ -129,17 +131,18 @@ public class UI extends PApplet
         }
     }
 
-    /*public void readFile()
+    public void readFile()
     {
         Table table = loadTable("PlanetData.csv", "header");
 
-        for (TableRow tr : table.rows()) {
-            Planets planets = new Planets(tr);
-            planetList.add(planets);
+        for (int i = 0; i<table.getRowCount(); i++) 
+        {
+            TableRow row = table.getRow(i);
+            System.out.println(row.getString("Name"));
         }
     }
 
-    public void printFile()
+    /*public void printFile()
     {
         for (Planets planets: planetList)
         {
