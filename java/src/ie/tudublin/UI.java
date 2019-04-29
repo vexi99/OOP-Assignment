@@ -189,8 +189,9 @@ public class UI extends PApplet
             System.out.println(row.getString("Habital Zone"));
             System.out.println(" ");
 
-            
+
         }
+        
     }
 }
 
