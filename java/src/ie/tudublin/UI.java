@@ -45,7 +45,7 @@ public class UI extends PApplet
     {
         //read from a csv file
         readFile();
-        
+
         //passing variables to classes
         sb = new StarBackground(this, 800, 800);
 
@@ -135,10 +135,6 @@ public class UI extends PApplet
     {
         //read in file data
         Table table = loadTable("PlanetData.csv", "header");
-    }
-
-    public void printFile()
-    {
         //print file data to output
         for (int i = 0; i<table.getRowCount(); i++) 
         {
@@ -146,6 +142,7 @@ public class UI extends PApplet
             System.out.println(row.getString("Name"));
         }
     }
+    
 
     ArrayList<Planets> planetList = new ArrayList<Planets>();
     
