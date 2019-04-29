@@ -116,7 +116,7 @@ public class UI extends PApplet
         row = table.getRow(5);
         planets6.setName(row.getString("Name"));
         planets6.getName();
-        
+
         row = table.getRow(6);
         planets7.setName(row.getString("Name"));
         planets7.getName();
@@ -175,42 +175,6 @@ public class UI extends PApplet
             System.out.println(row.getString("Name"));
             System.out.println(row.getFloat("Planet Mass"));
         }
-        
-        /*
-        row = table.getRow(1);
-        planets1.setName(row.getString("Name"));
-        planets1.getName();
-        System.out.println(namee);
-        row = table.getRow(2);
-        planets1.setName(row.getString("Name"));
-        planets1.getName();
-        System.out.println(namee);
-        row = table.getRow(3);
-        planets1.setName(row.getString("Name"));
-        planets1.getName();
-        System.out.println(namee);
-        row = table.getRow(4);
-        planets1.setName(row.getString("Name"));
-        planets1.getName();
-        System.out.println(namee);
-        row = table.getRow(5);
-        planets1.setName(row.getString("Name"));
-        planets1.getName();
-        System.out.println(namee);
-        row = table.getRow(6);
-        planets1.setName(row.getString("Name"));
-        planets1.getName();
-        System.out.println(namee);
-        */
-        //row = table.getRow(0);
-        //planets1.setName(row.getString("Name"));
-        
-        
-        
     }
-    
-
-    ArrayList<Planets> planetList = new ArrayList<Planets>();
-    
 }
 
