@@ -45,6 +45,11 @@ public class StarBackground extends PApplet
         {
             ui.circle(400,400,i);
         }
+
+        ui.textSize(10);
+        ui.fill(255);
+        ui.textAlign(CENTER);
+        ui.text("Hold Enter for info", 45, 15);
         
     }
 }
