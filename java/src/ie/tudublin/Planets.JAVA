@@ -25,7 +25,7 @@ public class Planets extends PApplet
     private int g;
     private int b;
     
-    public Planets(UI ui, float speed, float x, float y, float radius, int r, int g, int b)
+    public Planets(UI ui, float speed, float x, float y, float radius, int r, int g, int b, TableRow row)
     {
     
         //passing variables from UI.java
@@ -36,6 +36,7 @@ public class Planets extends PApplet
         this.r = r;
         this.g = g;
         this.b = b;
+        name = row.getString("Name");
         /*
         name = row.getString("Name");
         habital = row.getString("Habital Zone");
