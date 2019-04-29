@@ -133,8 +133,13 @@ public class UI extends PApplet
 
     public void readFile()
     {
+        //read in file data
         Table table = loadTable("PlanetData.csv", "header");
+    }
 
+    public void printFile()
+    {
+        //print file data to output
         for (int i = 0; i<table.getRowCount(); i++) 
         {
             TableRow row = table.getRow(i);
@@ -142,15 +147,7 @@ public class UI extends PApplet
         }
     }
 
-    /*public void printFile()
-    {
-        for (Planets planets: planetList)
-        {
-            System.out.println(planetList);
-        }
-    }
-
     ArrayList<Planets> planetList = new ArrayList<Planets>();
-    */
+    
 }
 
