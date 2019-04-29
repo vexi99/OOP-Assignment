@@ -25,6 +25,9 @@ public class Sun extends PApplet
         ui.fill(255, 0, 16);
         ui.noStroke();
         ui.circle(scWidth/2, scHeight/2, 50);
+        ui.textAlign(CENTER);
+        ui.textSize(10);
+        ui.text("TRAPPIST-1", scWidth/2, scHeight/2 - 30);
     }
 }
 

@@ -65,7 +65,7 @@ public class Planets extends PApplet
         /*controlling statement to limit speed of planets rotation, without this the planets speed
         / infinitely increases causing bugs
         */
-        if (speed > 15)
+        if (speed > 13)
         {
             speed -= 0.2;
         }
