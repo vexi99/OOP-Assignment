@@ -43,7 +43,7 @@ This is a bulleted list
 This is a numbered list
 
 1. Item
-1. Item
+
 
 This is a [hyperlink](http://bryanduggan.org)
 
