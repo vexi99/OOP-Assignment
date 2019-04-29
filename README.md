@@ -21,7 +21,7 @@ Information about each of the planets is printed to the command line at the star
 
 When the program is ran seven planets methods, a background method, a sun method and a menu method are all created. These methods are then passed their necessary variables which gives the classes everything that they need to work as intended.
 
-###StarBackground class
+### StarBackground class
 The *StarBackground* class is the first class called upon in the setup() function. A black background is drawn. Then the background is populated by yellow points, meant to be distant stars in space. The stars are drawn using a nested for-loop. I and J are incremeted by different amounts, these also serve as the X and Y co-ordinates for the points. This eliminates any hard-coding by looping through a nested for-loop and populating the sky with stars.
 
 After the background stars have been drawn, the orbital paths of the planets are drawn. This is also done with a for-loop where each circles diameter is increased by 110 pixels, allowing for all 7 to be drawn while also maximising space on the screen. These circles are firstly set to noFill() to stop any overlapping issues.
