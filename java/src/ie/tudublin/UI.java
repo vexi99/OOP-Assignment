@@ -54,7 +54,7 @@ public class UI extends PApplet
 
         sun = new Sun(this, 800, 800);
 
-        menu = new Menu(this, 800, 800);
+        menu = new Menu(this, 800,800);
 
         planets1 = new Planets(this, 4, 400, 400, 55, 244, 151, 12, row);
         planets2 = new Planets(this, 5, 400, 400, 110, 216, 158, 71, row);
@@ -168,12 +168,18 @@ public class UI extends PApplet
         //read in file data
         table = loadTable("PlanetData.csv", "header");
         //print file data to output
-       
+        System.out.println("Printing of Stars Information: ");
         for (int i = 0; i<table.getRowCount(); i++) 
         {
             row = table.getRow(i);
+            System.out.println(" ");
             System.out.println(row.getString("Name"));
+            System.out.println(row.getFloat("Orbital Period"));
+            System.out.println(row.getFloat("Distance from Star"));
+            System.out.println(row.getFloat("Planet radius"));
             System.out.println(row.getFloat("Planet Mass"));
+            System.out.println(row.getString("Habital Zone"));
+            System.out.println(" ");
         }
     }
 }

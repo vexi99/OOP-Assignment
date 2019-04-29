@@ -37,6 +37,12 @@ public class Planets extends PApplet
         this.g = g;
         this.b = b;
         name = row.getString("Name");
+        habital = row.getString("Habital Zone");
+        orbitPeriod = row.getFloat("Orbital Period");
+        starDist = row.getFloat("Distance from Star");
+        planetRadius = row.getFloat("Planet radius");
+        planetMass = row.getFloat("Planet Mass");
+        //System.out.println(planetMass);
         /*
         name = row.getString("Name");
         habital = row.getString("Habital Zone");
