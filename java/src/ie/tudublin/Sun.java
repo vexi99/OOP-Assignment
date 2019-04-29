@@ -31,7 +31,6 @@ public class Sun extends PApplet
     }
 }
 
-
 /*
 / "Sun" class which handles the drawing of the sun "TRAPPIST-1".
 / Which is at the center of the "Trappist-1" solar system which 

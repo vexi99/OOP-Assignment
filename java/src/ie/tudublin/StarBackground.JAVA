@@ -46,6 +46,7 @@ public class StarBackground extends PApplet
             ui.circle(400,400,i);
         }
 
+        //Text to let users know how to get into the menu
         ui.textSize(10);
         ui.fill(255);
         ui.textAlign(CENTER);

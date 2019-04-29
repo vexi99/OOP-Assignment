@@ -162,12 +162,13 @@ public class UI extends PApplet
             menu.render();
         }
     }
-    
+
 
     public void readFile()
     {
         //read in file data
         table = loadTable("PlanetData.csv", "header");
+        
         //print file data to output
         System.out.println("Printing of Stars Information: ");
         for (int i = 0; i<table.getRowCount(); i++) 
@@ -184,4 +185,7 @@ public class UI extends PApplet
         }
     }
 }
+
+/* "UI" class which handles the drawing of most of the main items within the assignment
+*/
 

@@ -42,15 +42,6 @@ public class Planets extends PApplet
         starDist = row.getFloat("Distance from Star");
         planetRadius = row.getFloat("Planet radius");
         planetMass = row.getFloat("Planet Mass");
-        //System.out.println(planetMass);
-        /*
-        name = row.getString("Name");
-        habital = row.getString("Habital Zone");
-        orbitPeriod = row.getFloat("Orbital Period");
-        starDist = row.getFloat("Distance from Star");
-        planetRadius = row.getFloat("Planet radius");
-        planetMass = row.getFloat("Planet Mass");
-        */
     }
 
     public void render()
@@ -68,8 +59,8 @@ public class Planets extends PApplet
     public void update()
     {
         theta += PApplet.TWO_PI * time / speed;
-        /*controlling statement to limit speed of planets rotation, without this the planets speed
-        / infinitely increases causing bugs
+        /*controlling statement to limit speed of planets rotation without this, the planets speed
+        / could infinitely increase causing bugs
         */
         if (speed > 13)
         {
