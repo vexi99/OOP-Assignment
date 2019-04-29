@@ -56,6 +56,7 @@ public class Planets extends PApplet
         float x2 = pos.x + (float) Math.sin(theta) * radius;
         float y2 = pos.y - (float) Math.cos(theta) * radius;
         ui.circle(x2, y2, 20);
+        ui.text(name,x2, (y2 + 20));
     }
 
     public void update()

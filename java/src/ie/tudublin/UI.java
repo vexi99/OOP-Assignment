@@ -96,27 +96,30 @@ public class UI extends PApplet
         row = table.getRow(0);
         planets1.setName(row.getString("Name"));
         planets1.getName();
+
         row = table.getRow(1);
         planets2.setName(row.getString("Name"));
         planets2.getName();
+
         row = table.getRow(2);
         planets3.setName(row.getString("Name"));
         planets3.getName();
+
         row = table.getRow(3);
         planets4.setName(row.getString("Name"));
         planets4.getName();
+
         row = table.getRow(4);
         planets5.setName(row.getString("Name"));
         planets5.getName();
+
         row = table.getRow(5);
         planets6.setName(row.getString("Name"));
         planets6.getName();
+        
         row = table.getRow(6);
         planets7.setName(row.getString("Name"));
         planets7.getName();
-        
-        
-        
         
         if (checkKey(LEFT))
         {
