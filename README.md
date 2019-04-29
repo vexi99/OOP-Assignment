@@ -8,6 +8,10 @@ Student Number: *C17448206*
 
 This assignemt is an interactive map of the distant solar system "TRAPPIST-1". TRAPPIST-1 is a solar system orbiting an ultra-cool red dwarf star "TRAPPIST-1" that is slightly larger, than the planet Jupiter. This solar system has peaked scientists curiousity after being found in 1999 during the [Two Micron All-Sky Survey2MASS](https://en.wikipedia.org/wiki/2MASS) . However it wasnt fully examined until 2015, when a team at the University of Léige observed the solar system for six months.
 
+![An image](Images/trappist-a.jpg)
+
+
+
 
 # Instructions
 
@@ -46,7 +50,7 @@ The *Sun* Class is the file which handles with the drawing of the star in the ce
 
 # What I am most proud of in the assignment
 
-In this assignment I am most proud of getting the planets to move in line with their drawn orbital paths around the star. Although in the end it was a quick and simple fix. I was stuck on this for quite some time but I couldnt let it go, I ended up spending two hours figuring it out. Once I finally completed this part of the program, I had a big smile on my face for the remainder of the day, simply because of how long it was bothering me.
+In this assignment I am most proud of getting the planets to move in line with their drawn orbital paths around the star. Although in the end it was a quick and simple fix. I was stuck on this for quite some time but I couldnt let it go, I ended up spending two hours figuring it out. Once I finally completed this part of the program, I had a big smile on my face for the remainder of the day, simply because of how long it was bothering me. Even though this section of code was not the most difficult or obscure, the fact that I powered through it and figured it out after being stuck on it for some time, felt like an accomplishment within itself. That is why the movement of the planets around the Star is what I am most proud of in this assignment.
 
 # Markdown Tutorial
 
