@@ -6,9 +6,13 @@ Student Number: *C17448206*
 
 # Description of the assignment:
 
-This assignemt is an interactive map of the distant solar system "TRAPPIST-1". TRAPPIST-1 is a solar system orbiting an ultra-cool red dwarf star "TRAPPIST-1" that is slightly larger, than the planet Jupiter. This solar system has peaked scientists curiousity after being found in 1999 during the [Two Micron All-Sky Survey2MASS](https://en.wikipedia.org/wiki/2MASS) . However it wasnt fully examined until 2015, when a team at the University of Léige observed the solar system for six months.
+This assignemt is an interactive map of the distant solar system "TRAPPIST-1". TRAPPIST-1 is a solar system orbiting an ultra-cool red dwarf star "TRAPPIST-1" that is slightly larger, than the planet Jupiter. This solar system has peaked scientists curiousity after being found in 1999 during the [Two Micron All-Sky Survey2MASS](https://en.wikipedia.org/wiki/2MASS) . However it wasnt fully examined until 2015, when a team at the University of Léige observed the solar system for six months. At the time finding 3 closely earth sized planets orbiting the star. Two years later on February 2017 astronemers found 4 more planets orbiting around TRAPPIST-1. 
 
-![An image](Images/trappist-a.jpg)
+![image](http://cdn.spacetelescope.org/archives/images/screen/heic1802c.jpg)
+
+TRAPPIST-1 is an ultra cool dwarf star, which has roughtly 8% of the mass and 11% the radius of our sun. Causing it to be less than 50% cooler than our own sun. I chose to do my assignment on TRAPPIST-1 due to one of the main reasons astronomers were also highly intrigued by the solar system. Three of the Seven planets within the solar system are within a habital zone, capable of sustaining human life. TRAPPIST-1E, TRAPPIST-1F, and TRAPPIST-1G are all capable of sustaining life. 
+
+![An image](http://cdn.spacetelescope.org/archives/images/screen/heic1713b.jpg)
 
 
 
