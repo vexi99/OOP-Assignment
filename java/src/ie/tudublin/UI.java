@@ -54,7 +54,7 @@ public class UI extends PApplet
 
         sun = new Sun(this, 800, 800);
 
-        menu = new Menu(this);
+        menu = new Menu(this, 800, 800);
 
         planets1 = new Planets(this, 4, 400, 400, 55, 244, 151, 12, row);
         planets2 = new Planets(this, 5, 400, 400, 110, 216, 158, 71, row);
