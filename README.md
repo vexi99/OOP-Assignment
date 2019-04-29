@@ -55,6 +55,34 @@ for (int i=110; i<780;i=i+110)
 }
 ```
 
+### UI Class
+The *UI* class is the main class within the program, everything is ran from here. The UI class holds the draw() function within it, where mostly all of the graphical drawings are called on. It is here where the program is made take shape.
+
+Aside from the graphical drawing aspect, in the *UI* Class a .CSV file is read in from the data folder, and loaded in to each planet created, giving it each one a name. Also information about the planets is written onto the command line from here in the readFile() function. The data is written in using a loadTable() function and then printed out to the command line using this for-loop:
+
+```Java
+System.out.println("Printing of Stars Information: ");
+        for (int i = 0; i<table.getRowCount(); i++) 
+        {
+            row = table.getRow(i);
+            System.out.println(" ");
+            System.out.println("Name: ");
+            System.out.println(row.getString("Name"));
+            System.out.println("Orbital Period: ");
+            System.out.println(row.getFloat("Orbital Period"));
+            System.out.println("Distance from Star: ");
+            System.out.println(row.getFloat("Distance from Star"));
+            System.out.println("Planet radius: ");
+            System.out.println(row.getFloat("Planet radius"));
+            System.out.println("Planet Mass: ");
+            System.out.println(row.getFloat("Planet Mass"));
+            System.out.println("Habital Zone? :");
+            System.out.println(row.getString("Habital Zone"));
+            System.out.println(" ");
+        }
+```
+
+
 ### Planets Class
 The *Planets* class is the most complex class in the program. Within the constructor of this class, 13 variables alone are initialised for later use. 
 
