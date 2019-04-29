@@ -140,6 +140,8 @@ public class UI extends PApplet
         {
             TableRow row = table.getRow(i);
             System.out.println(row.getString("Name"));
+            System.out.println(row.getFloat("Planet Mass"));
+            
         }
     }
     
