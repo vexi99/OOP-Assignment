@@ -4,6 +4,8 @@ Name: *David Tilson*
 
 Student Number: *C17448206*
 
+[Youtube Video of Project](https://youtu.be/kAfBgxlvm1s)
+
 # Description of the assignment:
 
 This assignemt is an interactive map of the distant solar system "TRAPPIST-1". TRAPPIST-1 is a solar system orbiting an ultra-cool red dwarf star "TRAPPIST-1" that is slightly larger, than the planet Jupiter. This solar system has peaked scientists curiousity after being found in 1999 during the [Two Micron All-Sky Survey2MASS](https://en.wikipedia.org/wiki/2MASS) . However it wasnt fully examined until 2015, when a team at the University of Léige observed the solar system for six months. At the time finding 3 closely earth sized planets orbiting the star. Two years later on February 2017 astronemers found 4 more planets orbiting around TRAPPIST-1. 
