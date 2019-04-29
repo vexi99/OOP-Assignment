@@ -175,11 +175,17 @@ public class UI extends PApplet
         {
             row = table.getRow(i);
             System.out.println(" ");
+            System.out.println("Name: ");
             System.out.println(row.getString("Name"));
+            System.out.println("Orbital Period: ");
             System.out.println(row.getFloat("Orbital Period"));
+            System.out.println("Distance from Star: ");
             System.out.println(row.getFloat("Distance from Star"));
+            System.out.println("Planet radius: ");
             System.out.println(row.getFloat("Planet radius"));
+            System.out.println("Planet Mass: ");
             System.out.println(row.getFloat("Planet Mass"));
+            System.out.println("Habital Zone? :");
             System.out.println(row.getString("Habital Zone"));
             System.out.println(" ");
         }
